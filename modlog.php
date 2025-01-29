@@ -103,39 +103,7 @@ foreach ($logs as $log) {
     </style>
 </head>
 <body>
-<!-- <ul class="lightrope"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul> -->
-<!-- <div class="banner" style="background-color: #555555;"> -->
-<div class="banner">
-    <!-- <p><a href="https://scioly.org/shirts">Scioly.org t-shirts are available for a limited time! Click here for more information. Orders close Wednesday, May 8, 2019 at 11:59 PM PST.</a></p> -->
-    <!-- <p><a href="https://scioly.org/fantasy">Who will win? Click here to predict event medalists and top teams for this year's national tournament. Contest closes Friday, May 31, 2019 at 10:00 AM ET.</a></p> -->
-    <!-- <p><a href="https://scioly.org/nationals" style="color: #ffffff;">One page for all our nationals-related events! Click here for prediction contest, medal counts, and more!</a></p> -->
-    <p><a href="https://scioly.org/forums/viewtopic.php?f=24&t=15660">Welcome to the new season! Click here to learn
-            what's new.</a></p>
-</div>
-<div class="site-nav">
-    <a href="https://scioly.org/">
-        <img src="https://scioly.org/src/img/logo/logo.png">
-    </a>
-    <div class="hamburger" onclick="hamburger(this)">
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <ul>
-        <li><a href="https://scioly.org/forums">Forums</a></li>
-        <li><a href="https://scioly.org/wiki">Wiki</a></li>
-        <li><a href="https://scioly.org/tests">Test Exchange</a></li>
-        <!-- <li><a href="https://scioly.org/gallery">Image Gallery</a></li> -->
-        <!-- <li><a href="https://scioly.org/invitational">Invites</a></li> -->
-        <li><a href="https://scioly.org/chat">Chat</a></li>
-        <li><a href="user.php?u=46711"
-               class="button"><?= $user->data['username']; ?></a>
-        </li>
-    </ul>
-</div>
-<img class="print-only" src="https://scioly.org/src/img/logo/logo_black.png" style="max-width: 150px;">
+<?= navigationHTML($user) ?>
 <?= reportBox() ?>
 <div class="container menu-reactive">
     <div class="gal-nav">
